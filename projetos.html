@@ -28,16 +28,64 @@
         </nav>
 
         <section>
-            <p>
-               Tenho alguns projetos disponíveis no 
-               <a href="www.github.com/AnBarbosaBr">Github/AnBarbosaBr</a>
-               e também no Colab.Research <a href="https://colab.research.google.com/drive/19Bn9du3pcKWonHaZU-54zRfqQ1JOl0Hj" target="_blank">Quantificador de Fases</a>.
-            </p>
-            <p>
-                Futuramente, irei descrever melhor os projetos e colocar links diretos.
-            </p>
+                
+                <p>
+                    Futuramente, irei descrever melhor os projetos e colocar links diretos.
+                </p>
+    
+            </section>
+        <div class="projetos">
+            <section>
+                <h3>Analisador Léxico</h3>
+                <span>
+                    <h4 class="linguagem">Linguagem: C</h4>
+                    <h4 class="repositorio">Repositório: <a href="https://github.com/AnBarbosaBr/Compiladores">GitHub</a> </h4>
+                    <img class="screenshot" src="_imagens/captura_AnalisadorLexico.PNG" alt="Analisador Léxico rodando no PowerShell."
+                </span>
+                <p>
+                    Projeto desenvolvido como requerimento para a disciplina de <b>Compiladores</b>, 
+                    cursada no 2º Quadrimestre de 2018. Trata-se de um analisador léxico para uma variação 
+                    da linguagem "javalete", conforme 
+                    <a href="https://github.com/AnBarbosaBr/Compiladores/blob/master/Recursos/Projeto_Analisador_Lexico.pdf">especificação proposta.</a>
+                    
+                </p>
+                <p>
+                    A análise léxica é a primeira parte do processo 
+                    de compilação. O trabalho do analisador é interpretar o conjunto de caracteres digitados 
+                    no arquivo fonte e transformá-lo em tokens que serão utilizados nas próximas etapas 
+                    de compilação. 
+                </p>
+                <p>
+                    Nessa etapa não se preocupa em saber se as palavras digitadas respeitam a
+                    sintaxe correta, apenas se elas estão escritas da forma correta. Dessa forma
+                    são identificados apenas os erros mais simples relacionados
+                    ao alfabeto utilizado, ou seja, se houve a utilização de caracteres inválidos
+                    em determinadas palavras.
+                </p>
+                <p>
+                    A implementação foi realizada através de uma máquina de estados que avaliava os
+                    caracteres da entrada um a um. Assim que havia um espaço, se a máquina estivesse num
+                    estado de aceitação, gerava o token correspondente à palavra lida. Caso a máquina não
+                    estivesse num estado de aceitação, retornava um token de erro. Note que a máquina
+                    ignorava comentários e espaços em branco consecutivos, reduzindo o processamento necessário. 
+                </p>
+                <p>
+                    O projeto foi realizado em conjunto com mais dois alunos, porém fui o principal responsável
+                    pelo código, enquanto os outros se concentraram mais no planejamento da máquina de estados 
+                    e a redação do artigo que foi entregue como parte dos requisitos da disciplina. 
+                </p>
+                
+                
+                
 
-        </section>
+
+
+
+                
+            </section>
+
+
+        </div>
 
     <footer>
         <p>Site em Construção</p>
